@@ -7,13 +7,30 @@ Debe presentar un menu:
 5. Salir*/
 int [] notas= new int [25];
 
-/*Agregar*/
+/*Agregar - Integrante 1*/
 
 
-/*Mostrar*/
+/*Mostrar - Integrante 2*/
 
 
-/*3 primeros lugares*/
+/*3 primeros lugares - Integrante 3*/
 
 
-/*Mostrar descendente*/
+/*Mostrar descendente - Integrante 4*/
+for (int i = 0; i < notas.Length; i++)
+{
+    for (int j = 0; j < notas.Length - 1; j++)
+    {
+        if (notas[j] < notas[j + 1])
+        {
+            int temp = notas[j];
+            notas[j] = notas[j + 1];
+            notas[j + 1] = temp;
+        }
+    }
+}
+Console.WriteLine("Notas en orden descendente:");
+for (int i = 0; i < notas.Length; i++)  
+{
+    Console.WriteLine(notas[i]);
+}
