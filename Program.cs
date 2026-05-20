@@ -8,8 +8,12 @@ Debe presentar un menu:
 int [] notas= new int [25];
 
 /*Agregar*/
-
-
+Console.WriteLine("ingrese las notas de los estudiantes");
+for (int i = 0; i < notas.Length; i++)
+{
+    Console.WriteLine($"estdiante {i+1}:");
+    notas[i] = int.Parse(Console.ReadLine());
+}
 /*Mostrar*/
 
 
