@@ -11,7 +11,13 @@ int [] notas= new int [25];
 
 
 /*Mostrar*/
-
+for(int i= 0; i < 25; i++)
+{
+    if(notas[i]<70) Console.ForegroundColor color= Console.Read;
+    else Console.ForegroundColor= ConsoleColor.green;
+    Console.WriteLine($"Notas : [i+1] (notas[i])");
+    Console.ResetColor();
+}
 
 /*3 primeros lugares*/
 
